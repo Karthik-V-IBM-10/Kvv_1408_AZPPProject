@@ -11,10 +11,27 @@ packages:
   version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
+- name: DADA_ExtendedProperty
+  gitServerName: kvv
+  gitUrl: https://github.com/ParmelaDohling579
+  gitUsername: Karthik-V-IBM-10
+  gitBranch: main
 services:
 - serviceName: project.kvv_1408_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:mssql
   packages:
   - name: Kvv_1408_AZPPProject
+    version: "1.0"
+  - name: DADA_ExtendedProperty
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.kvv_1408_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:test
+  packages:
+  - name: Kvv_1408_AZPPProject
+    version: "1.0"
+  - name: DADA_ExtendedProperty
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -24,6 +41,8 @@ services:
   packages:
   - name: Kvv_1408_AZPPProject
     version: "1.0"
+  - name: DADA_ExtendedProperty
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -31,6 +50,8 @@ services:
 - serviceName: project.kvv_1408_azpp.integrations:DAFdocumentToJson
   packages:
   - name: Kvv_1408_AZPPProject
+    version: "1.0"
+  - name: DADA_ExtendedProperty
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -44,13 +65,7 @@ services:
   packages:
   - name: Kvv_1408_AZPPProject
     version: "1.0"
-  - name: WmJDBCAdapter
-    version: 10.3.0.0.34
-    wpmServer: https://packages.webmethods.io
-    wpmRegistry: licensed
-- serviceName: project.testman2603_1107b997670941958b8025084af6db48_export.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:TestDBConn
-  packages:
-  - name: Kvv_1408_AZPPProject
+  - name: DADA_ExtendedProperty
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -59,6 +74,8 @@ services:
 - serviceName: project.kvv_1408_azpp.integrations:SecurityTest
   packages:
   - name: Kvv_1408_AZPPProject
+    version: "1.0"
+  - name: DADA_ExtendedProperty
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -84,6 +101,8 @@ services:
   packages:
   - name: Kvv_1408_AZPPProject
     version: "1.0"
+  - name: DADA_ExtendedProperty
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -92,6 +111,8 @@ services:
   packages:
   - name: Kvv_1408_AZPPProject
     version: "1.0"
+  - name: DADA_ExtendedProperty
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -99,6 +120,8 @@ services:
 - serviceName: project.kvv_1408_azpp.integrations:switchCaseDADA
   packages:
   - name: Kvv_1408_AZPPProject
+    version: "1.0"
+  - name: DADA_ExtendedProperty
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
